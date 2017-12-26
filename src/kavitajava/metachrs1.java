@@ -4,11 +4,11 @@ import java.util.regex.Pattern;
 
 public class metachrs1 {
     public static void main(String[] args) {
-        String data = "Today is ool";
-        //String search = "[ftc]ool";
+        String data = "Quality questions is Quality life";
+        String search = "q.+y";
         //String search = "[a-z]ool";
         //String search = "[^a-z]ool";
-        String search = "[a-e&&[^ab]]ool";
+        //String search = "[a-e&&[^ab]]ool";
         Pattern ptrn = Pattern.compile(search);
         Matcher mtr = ptrn.matcher(data);
         if(mtr.find())
