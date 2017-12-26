@@ -4,9 +4,10 @@ import java.util.regex.Pattern;
 
 public class metachrs1 {
     public static void main(String[] args) {
-        String data = "Today is mool day";
+        String data = "Today is 4ool day";
         //String search = "[ftc]ool";
-        String search = "[a-z]ool";
+        //String search = "[a-z]ool";
+        String search = "[^a-z]ool";
         Pattern ptrn = Pattern.compile(search);
         Matcher mtr = ptrn.matcher(data);
         if(mtr.find())
